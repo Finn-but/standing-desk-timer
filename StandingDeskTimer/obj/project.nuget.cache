@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "LtfGjNo4py9brTBXhkCH+GQ3ppb6hmkeBDNgD7Wmo9ywhN5zBaWXIzAiDCxv0EKhrTc/glzi+jYYXutJN3fAYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windowsappsdk\\1.4.230913002\\microsoft.windowsappsdk.1.4.230913002.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.28\\microsoft.netcore.app.runtime.win-x86.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.28\\microsoft.netcore.app.crossgen2.win-x64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.31\\microsoft.windows.sdk.net.ref.10.0.19041.31.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.28\\microsoft.aspnetcore.app.runtime.win-x86.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.28\\microsoft.netcore.app.runtime.win-arm64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.28\\microsoft.aspnetcore.app.runtime.win-x64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.28\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.28\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-arm64\\6.0.28\\microsoft.aspnetcore.app.runtime.win-arm64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.28\\microsoft.netcore.app.runtime.win-x64.6.0.28.nupkg.sha512",
+    "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.28\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "StandingDeskTimer (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "StandingDeskTimer (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

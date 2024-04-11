@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|c:\\users\\finnvb\\source\\repos\\standingdesktimer\\standingdesktimer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|c:\\users\\finnvb\\source\\repos\\standingdesktimer\\standingdesktimer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|c:\\users\\finnvb\\source\\repos\\standingdesktimer\\standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\App.xaml.cs",
+              "RelativeDocumentMoniker": "StandingDeskTimer\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\App.xaml.cs",
+              "RelativeToolTip": "StandingDeskTimer\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T14:25:21.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "StandingDeskTimer\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\MainWindow.xaml.cs",
+              "RelativeToolTip": "StandingDeskTimer\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAmwCoBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:47:09.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "StandingDeskTimer\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\MainWindow.xaml",
+              "RelativeToolTip": "StandingDeskTimer\\MainWindow.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-09T07:42:22.42Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
