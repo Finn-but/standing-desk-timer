@@ -76,7 +76,7 @@ namespace StandingDeskTimer
 
                         //Needs to be checked
                         timer.Start();
-                        setBadgeNumber(remainingTime.Minutes);
+                        setBadgeNumber((int)remainingTime.TotalMinutes);
                         ProgressBar1.Visibility = Visibility.Visible;
                     } else
                     {
@@ -118,7 +118,7 @@ namespace StandingDeskTimer
                         ProgressBar1.Foreground = PlayColor;
                         if (IsTimerRunning)
                         {
-                            setBadgeNumber(remainingTime.Minutes);
+                            setBadgeNumber((int)Math.Ceiling(remainingTime.TotalMinutes));
                         }
                     }
                 }
@@ -165,7 +165,7 @@ namespace StandingDeskTimer
                     }
                     if (!IsPaused && IsTimerRunning)
                     {
-                        setBadgeNumber(remainingTime.Minutes);
+                        setBadgeNumber((int)remainingTime.TotalMinutes);
                     }
                 }
             }
@@ -268,9 +268,9 @@ namespace StandingDeskTimer
             // Update the remaining time
             remainingTime = remainingTime.Subtract(TimeSpan.FromSeconds(1));
 
-            if (remainingTime.Seconds == 0)
+            if (remainingTime.Seconds == 0 && remainingTime.Minutes > 0)
             {
-                    setBadgeNumber(remainingTime.Minutes);
+                    setBadgeNumber((int)remainingTime.TotalMinutes);
             }
 
             // Update the countdown display
@@ -382,6 +382,10 @@ namespace StandingDeskTimer
                 else
                 {
                     SittingTime.Text = remainingTime.ToString(@"mm\:ss");
+                }
+                if (!IsPaused)
+                {
+                    setBadgeNumber((int)remainingTime.TotalMinutes);
                 }
             }
         }
