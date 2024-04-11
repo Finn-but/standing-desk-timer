@@ -78,7 +78,7 @@ namespace StandingDeskTimer
 
                         //Needs to be checked
                         timer.Stop();
-                        BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
+                        clearBadge();
                         ProgressBar1.Visibility = Visibility.Collapsed;
                     }
                     
@@ -101,11 +101,16 @@ namespace StandingDeskTimer
                         timer.Stop();
                         PauseButton.Content = "Resume";
                         ProgressBar1.ShowPaused = true;
+                        setPauseBadge();
                     } else
                     {
                         timer.Start();
                         PauseButton.Content = "Pause";
                         ProgressBar1.ShowPaused = false;
+                        if (IsTimerRunning)
+                        {
+                            setBadgeNumber(remainingTime.Minutes);
+                        }
                     }
                 }
             }
@@ -148,6 +153,10 @@ namespace StandingDeskTimer
                         SittingTime.Foreground = ActiveColor;
 
                         remainingTime = TimeSpan.FromMinutes(SittingValue);
+                    }
+                    if (!IsPaused && IsTimerRunning)
+                    {
+                        setBadgeNumber(remainingTime.Minutes);
                     }
                 }
             }
@@ -203,6 +212,8 @@ namespace StandingDeskTimer
             StandingTime.Text = TimeSpan.FromMinutes(StandingValue).ToString(@"mm\:ss");
             SittingTime.Text = TimeSpan.FromMinutes(SittingValue).ToString(@"mm\:ss");
             InactiveColor = SittingTime.Foreground;
+
+            clearBadge();
         }
 
         private void NumberBox_ValueChanged(NumberBox sender, NumberBoxValueChangedEventArgs args)
@@ -293,6 +304,35 @@ namespace StandingDeskTimer
             // And update the badge
             badgeUpdater.Update(badge);
 
+        }
+
+        private void setPauseBadge()
+        {
+            string badgeGlyphValue = "paused";
+
+            // Get the blank badge XML payload for a badge glyph
+            XmlDocument badgeXml =
+                BadgeUpdateManager.GetTemplateContent(BadgeTemplateType.BadgeGlyph);
+
+            // Set the value of the badge in the XML to our glyph value
+            XmlElement badgeElement =
+                badgeXml.SelectSingleNode("/badge") as XmlElement;
+            badgeElement.SetAttribute("value", badgeGlyphValue);
+
+            // Create the badge notification
+            BadgeNotification badge = new BadgeNotification(badgeXml);
+
+            // Create the badge updater for the application
+            BadgeUpdater badgeUpdater =
+                BadgeUpdateManager.CreateBadgeUpdaterForApplication();
+
+            // And update the badge
+            badgeUpdater.Update(badge);
+        }
+
+        private void clearBadge()
+        {
+            BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
         }
     }
 }

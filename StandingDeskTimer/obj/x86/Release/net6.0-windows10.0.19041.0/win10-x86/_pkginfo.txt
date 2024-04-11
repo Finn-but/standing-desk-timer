@@ -1,1 +1,1 @@
-C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\AppPackages\StandingDeskTimer_1.0.2.0_x86_Test\StandingDeskTimer_1.0.2.0_x86.msix
+C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\AppPackages\StandingDeskTimer_1.0.4.0_x86_Test\StandingDeskTimer_1.0.4.0_x86.msix
