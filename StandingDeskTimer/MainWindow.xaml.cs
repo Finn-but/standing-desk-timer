@@ -22,6 +22,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.UI.Notifications;
 using Windows.Data.Xml.Dom;
+using System.Diagnostics;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -38,6 +39,11 @@ namespace StandingDeskTimer
         private DispatcherTimer timer;
         private TimeSpan remainingTime;
 
+        private Brush ActiveColor = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 49, 181, 91));
+        private Brush InactiveColor;
+        private Brush PauseColor = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 249, 199, 79));
+        private Brush PlayColor;
+
         private bool _isTimerRunning;
         public bool IsTimerRunning
         {
@@ -50,14 +56,17 @@ namespace StandingDeskTimer
                     if (IsStanding)
                     {
                         remainingTime = TimeSpan.FromMinutes(StandingValue);
+                        ProgressBar1.Maximum = StandingValue;
+                        SetSlider(StandingValue);
                     }
                     else
                     {
                         remainingTime = TimeSpan.FromMinutes(SittingValue);
+                        ProgressBar1.Maximum = SittingValue;
+                        SetSlider(SittingValue);
                     }
                     SittingTime.Text = TimeSpan.FromMinutes(SittingValue).ToString(@"mm\:ss");
                     StandingTime.Text = TimeSpan.FromMinutes(StandingValue).ToString(@"mm\:ss");
-                    ProgressBar1.Value = 1;
 
                     if (_isTimerRunning) {
                         PlayButton.Content = "Stop";
@@ -100,13 +109,13 @@ namespace StandingDeskTimer
                     {
                         timer.Stop();
                         PauseButton.Content = "Resume";
-                        ProgressBar1.ShowPaused = true;
+                        ProgressBar1.Foreground = PauseColor;
                         setPauseBadge();
                     } else
                     {
                         timer.Start();
                         PauseButton.Content = "Pause";
-                        ProgressBar1.ShowPaused = false;
+                        ProgressBar1.Foreground = PlayColor;
                         if (IsTimerRunning)
                         {
                             setBadgeNumber(remainingTime.Minutes);
@@ -115,9 +124,6 @@ namespace StandingDeskTimer
                 }
             }
         }
-
-        private Brush ActiveColor = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 49, 181, 91));
-        private Brush InactiveColor;
 
         private bool _isStanding = true;
         public bool IsStanding
@@ -129,9 +135,10 @@ namespace StandingDeskTimer
                 {
                     _isStanding = value;
 
-                    ProgressBar1.Value = 1;
                     if (_isStanding)
                     {
+                        ProgressBar1.Maximum = StandingValue;
+                        SetSlider(StandingValue);
                         Title = "Standing";
                         StandingImage.Visibility = Visibility.Visible;
                         StandingTime.Foreground = ActiveColor;
@@ -144,6 +151,8 @@ namespace StandingDeskTimer
                     }
                     else
                     {
+                        ProgressBar1.Maximum = SittingValue;
+                        SetSlider(SittingValue);
                         Title = "Sitting";
                         StandingImage.Visibility = Visibility.Collapsed;
                         StandingTime.Foreground = InactiveColor;
@@ -184,6 +193,19 @@ namespace StandingDeskTimer
             }
         }
 
+        private bool _isDragging;
+        public bool IsDragging
+        {
+            get { return _isDragging; }
+            set
+            {
+                if (_isDragging != value)
+                {
+                    _isDragging = value;
+                }
+            }
+        }
+
 
         public MainWindow()
         {
@@ -212,8 +234,10 @@ namespace StandingDeskTimer
             StandingTime.Text = TimeSpan.FromMinutes(StandingValue).ToString(@"mm\:ss");
             SittingTime.Text = TimeSpan.FromMinutes(SittingValue).ToString(@"mm\:ss");
             InactiveColor = SittingTime.Foreground;
+            PlayColor = ProgressBar1.Foreground;
 
             clearBadge();
+
         }
 
         private void NumberBox_ValueChanged(NumberBox sender, NumberBoxValueChangedEventArgs args)
@@ -237,6 +261,10 @@ namespace StandingDeskTimer
 
         private void Timer_Tick(object sender, object e)
         {
+            if (IsDragging)
+            {
+                return;
+            }
             // Update the remaining time
             remainingTime = remainingTime.Subtract(TimeSpan.FromSeconds(1));
 
@@ -248,13 +276,12 @@ namespace StandingDeskTimer
             // Update the countdown display
             if (IsStanding)
             {
-                ProgressBar1.Value = remainingTime.TotalMinutes / StandingValue;
                 StandingTime.Text = remainingTime.ToString(@"mm\:ss");
             } else
             {
-                ProgressBar1.Value = remainingTime.TotalMinutes / SittingValue;
                 SittingTime.Text = remainingTime.ToString(@"mm\:ss");
             }
+            SetSlider(remainingTime.TotalMinutes);
 
             // Check if the countdown has reached zero
             if (remainingTime <= TimeSpan.Zero)
@@ -333,6 +360,40 @@ namespace StandingDeskTimer
         private void clearBadge()
         {
             BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
+        }
+
+        private bool isProgrammaticChange = false;
+        private void SetSlider(double value)
+        {
+            isProgrammaticChange = true;
+            ProgressBar1.Value = value;
+            isProgrammaticChange = false;
+        }
+
+        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            if (!isProgrammaticChange)
+            {
+                remainingTime = TimeSpan.FromMinutes(Math.Round(e.NewValue));
+                if (IsStanding)
+                {
+                    StandingTime.Text = remainingTime.ToString(@"mm\:ss");
+                }
+                else
+                {
+                    SittingTime.Text = remainingTime.ToString(@"mm\:ss");
+                }
+            }
+        }
+
+        private void Slider_ManipulationStarted(object sender, ManipulationStartedRoutedEventArgs e)
+        {
+            IsDragging = true;
+        }
+
+        private void Slider_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
+        {
+            IsDragging = false;
         }
     }
 }

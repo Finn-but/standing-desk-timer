@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StandingDeskTimer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6b41a87d90bd13301bfc6565e03fa8db3f26276")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d8d03f7adf60d1b624c1218deec2ac8bd8ae170")]
 [assembly: System.Reflection.AssemblyProductAttribute("StandingDeskTimer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StandingDeskTimer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

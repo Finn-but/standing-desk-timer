@@ -14,7 +14,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="34"/>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
@@ -39,7 +39,7 @@
                 <TextBlock x:ConnectionId='9' Margin="5,5,29,5" x:Name="SittingTime" Width="100" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Text="00:00"/>
             </StackPanel>
 
-            <ProgressBar x:ConnectionId='4' x:Name="ProgressBar1" Value="1" Visibility="Collapsed" Maximum="1" Grid.Row="3"/>
+            <Slider x:ConnectionId='4' x:Name="ProgressBar1" Visibility="Collapsed" Maximum="30" Grid.Row="3"                                    ManipulationMode="All"                                                                                                       />
 
             <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Button x:ConnectionId='5' x:Name="PlayButton" Width="74" Content="Start"                          Margin="5"/>

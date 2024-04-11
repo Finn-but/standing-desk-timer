@@ -12,7 +12,7 @@
   <Identity
     Name="8a041da6-6d3c-4d52-ac07-4646ad74dbdd"
     Publisher="CN=FinnVB"
-    Version="1.0.4.0" />
+    Version="1.0.5.0" />
 
   <mp:PhoneIdentity PhoneProductId="8a041da6-6d3c-4d52-ac07-4646ad74dbdd" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

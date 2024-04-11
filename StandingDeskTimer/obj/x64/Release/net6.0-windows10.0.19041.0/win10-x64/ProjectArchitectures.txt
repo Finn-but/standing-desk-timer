@@ -1,1 +1,1 @@
-C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\StandingDeskTimer.csproj;x64
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\StandingDeskTimer.csproj;x64
