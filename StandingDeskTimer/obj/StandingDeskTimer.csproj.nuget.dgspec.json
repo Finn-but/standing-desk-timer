@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj": {}
+    "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\StandingDeskTimer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj": {
+    "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\StandingDeskTimer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj",
+        "projectUniqueName": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\StandingDeskTimer.csproj",
         "projectName": "StandingDeskTimer",
-        "projectPath": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj",
+        "projectPath": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\StandingDeskTimer.csproj",
         "packagesPath": "C:\\Users\\FinnVB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\obj\\",
+        "outputPath": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

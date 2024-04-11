@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LtfGjNo4py9brTBXhkCH+GQ3ppb6hmkeBDNgD7Wmo9ywhN5zBaWXIzAiDCxv0EKhrTc/glzi+jYYXutJN3fAYg==",
+  "dgSpecHash": "NtlKA4q+cNUhVUfHb3txIxUPwNcnPW/97UzQd+FgIU6fhDwfzxtulKmCT8MjyFOFn0fsZTsTkkzgMjiVWrf7wQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FinnVB\\source\\repos\\StandingDeskTimer\\StandingDeskTimer\\StandingDeskTimer.csproj",
+  "projectFilePath": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\StandingDeskTimer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.755\\microsoft.windows.sdk.buildtools.10.0.22621.755.nupkg.sha512",
     "C:\\Users\\FinnVB\\.nuget\\packages\\microsoft.windowsappsdk\\1.4.230913002\\microsoft.windowsappsdk.1.4.230913002.nupkg.sha512",

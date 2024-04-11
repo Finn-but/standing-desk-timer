@@ -1,0 +1,1 @@
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\StandingDeskTimer.csproj;x86
