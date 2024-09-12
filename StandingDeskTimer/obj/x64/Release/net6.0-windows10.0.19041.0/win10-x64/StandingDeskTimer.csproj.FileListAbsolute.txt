@@ -524,7 +524,6 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.2824.12007.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -569,3 +568,4 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x64\Release\net6.0-
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.2924.17105.dll

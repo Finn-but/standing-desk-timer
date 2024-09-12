@@ -38,6 +38,8 @@ namespace StandingDeskTimer
 
         private DispatcherTimer timer;
         private TimeSpan remainingTime;
+        private TimeSpan remainingTripleTwentyTime;
+        private TimeSpan remainingTripleTwentyAwayTime;
 
         private Brush ActiveColor = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 49, 181, 91));
         private Brush InactiveColor;
@@ -52,6 +54,8 @@ namespace StandingDeskTimer
                 if (_isTimerRunning != value)
                 {
                     _isTimerRunning = value;
+                    remainingTripleTwentyTime = TimeSpan.FromMinutes(20);
+                    remainingTripleTwentyAwayTime = TimeSpan.FromSeconds(0);
 
                     if (IsStanding)
                     {
@@ -206,6 +210,18 @@ namespace StandingDeskTimer
             }
         }
 
+        public bool EnableTripleTwenty
+        {
+            get { return (bool)localSettings.Values["tripleTwentyValue"]; }
+            set
+            {
+                if ((bool)localSettings.Values["tripleTwentyValue"] != value)
+                {
+                    localSettings.Values["tripleTwentyValue"] = value;
+                }
+            }
+        }
+
 
         public MainWindow()
         {
@@ -221,6 +237,11 @@ namespace StandingDeskTimer
             if (!localSettings.Values.ContainsKey("standingValue"))
             {
                 localSettings.Values["standingValue"] = 30;
+            }
+
+            if (!localSettings.Values.ContainsKey("tripleTwentyValue"))
+            {
+                localSettings.Values["tripleTwentyValue"] = false;
             }
 
             // Initialize timer
@@ -295,6 +316,28 @@ namespace StandingDeskTimer
                 }
                 IsStanding = !IsStanding;
             }
+
+            if (EnableTripleTwenty)
+            {
+
+                if (remainingTripleTwentyTime > TimeSpan.Zero)
+                {
+                    remainingTripleTwentyTime = remainingTripleTwentyTime.Subtract(TimeSpan.FromSeconds(1));
+                    if (remainingTripleTwentyTime == TimeSpan.Zero)
+                    {
+                        remainingTripleTwentyAwayTime = TimeSpan.FromSeconds(20);
+                        ShowTripleTwenty();
+                    }
+                } else if (remainingTripleTwentyAwayTime > TimeSpan.Zero)
+                {
+                    remainingTripleTwentyAwayTime = remainingTripleTwentyAwayTime.Subtract(TimeSpan.FromSeconds(1));
+                    UpdateTripleTwenty(20 - remainingTripleTwentyAwayTime.Seconds);
+                    if (remainingTripleTwentyAwayTime == TimeSpan.Zero)
+                    {
+                        remainingTripleTwentyTime = TimeSpan.FromMinutes(20);
+                    }
+                }
+            }
         }
 
         private async static void SendNotificationToast(string message)
@@ -308,7 +351,6 @@ namespace StandingDeskTimer
                 .BuildNotification();
             
             AppNotificationManager.Default.Show(toast);
-            //Task.Delay(10000).ContinueWith(t => AppNotificationManager.Default.RemoveByIdAsync(toast.Id));
         }
 
         private void setBadgeNumber(int num)
@@ -398,6 +440,44 @@ namespace StandingDeskTimer
         private void Slider_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
         {
             IsDragging = false;
+        }
+
+        private void ShowTripleTwenty()
+        {
+            var notification = new AppNotificationBuilder()
+                .AddText("Look at an object 6m away!")
+                .SetScenario(AppNotificationScenario.Reminder)
+                .AddProgressBar(new AppNotificationProgressBar()
+                    .BindStatus()
+                    .BindValue()
+                    .BindValueStringOverride())
+                 .SetTag("TripleTwenty")
+                 .SetGroup("TripleTwenty")
+                .BuildNotification();
+
+            var data = new AppNotificationProgressData(1);
+            data.Value = (double)(0 / 20); // Binds to {progressValue} in xml payload
+            data.ValueStringOverride = String.Format("{0}/{1} s", 0, 20); // Binds to {progressValueString} in xml payload
+            data.Status = " "; // Binds to {progressStatus} in xml payload
+
+            notification.Progress = data;
+
+            AppNotificationManager.Default.Show(notification);
+        }
+
+        private async void UpdateTripleTwenty(int value)
+        {
+                int total = 20;
+                var data = new AppNotificationProgressData(1);
+                data.Value = (double)value / total; // Binds to {progressValue} in xml payload
+                data.ValueStringOverride = String.Format("{0}/{1} s", value, total); // Binds to {progressValueString} in xml payload
+                data.Status = " "; // Binds to {progressStatus} in xml payload
+                await AppNotificationManager.Default.UpdateAsync(data, "TripleTwenty", "TripleTwenty");
+
+            if (value == 20)
+            {
+                await AppNotificationManager.Default.RemoveByTagAndGroupAsync("TripleTwenty", "TripleTwenty");
+            }
         }
     }
 }

@@ -8,22 +8,28 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Viewbox>
+    <Grid>
+        <MenuBar Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuBarItem Title="Settings">
+                <ToggleMenuFlyoutItem Text="20-20-20" IsChecked="{x:Bind EnableTripleTwenty, Mode=TwoWay}"></ToggleMenuFlyoutItem>
+            </MenuBarItem>
+        </MenuBar>
+        <Viewbox>
         <Grid Margin="70,0,70,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="34"/>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
-            <StackPanel>
+            <StackPanel Grid.Row="0">
                 <Image x:Name="StandingImage" Source="assets/stand.png" Height="80" Width="80" Margin="0,0,0,10"></Image>
                 <Image x:Name="SittingImage" Visibility="Collapsed" Source="assets/sit.png" Height="80" Width="80" Margin="0,0,0,10"></Image>
             </StackPanel>
 
-            <StackPanel x:Name="InactivePanel" Height="42"  Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Grid.Row="1" x:Name="InactivePanel" Height="42"  Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Stand: " VerticalAlignment="Center"/>
                 <NumberBox Width="100" Margin="5" Maximum="120" Minimum="1" Value="{x:Bind StandingValue, Mode=TwoWay}" ValueChanged="NumberBox_ValueChanged" />
                 <TextBlock Text="min" VerticalAlignment="Center"/>
@@ -32,20 +38,21 @@
                 <TextBlock Text="min" VerticalAlignment="Center"/>
             </StackPanel>
 
-            <StackPanel x:Name="ActivePanel" Height="42" Visibility="Collapsed" Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Grid.Row="2" x:Name="ActivePanel" Height="42" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Stand: " VerticalAlignment="Center"/>
                 <TextBlock x:Name="StandingTime" Foreground="#31b55b" Width="100" Margin="5" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Text="00:00"/>
                 <TextBlock Margin="74,0,0,0" Text="Sit: " VerticalAlignment="Center"/>
                 <TextBlock Margin="5,5,29,5" x:Name="SittingTime" Width="100" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Text="00:00"/>
             </StackPanel>
 
-            <Slider x:Name="ProgressBar1" Visibility="Collapsed" Maximum="30" Grid.Row="3" ValueChanged="Slider_ValueChanged" ManipulationMode="All" ManipulationStarted="Slider_ManipulationStarted" ManipulationCompleted="Slider_ManipulationCompleted" />
+                <Slider Grid.Row="3" x:Name="ProgressBar1" Visibility="Collapsed" Maximum="30" ValueChanged="Slider_ValueChanged" ManipulationMode="All" ManipulationStarted="Slider_ManipulationStarted" ManipulationCompleted="Slider_ManipulationCompleted" />
 
-            <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Button x:Name="PlayButton" Width="74" Content="Start" Click="PlayButton_Click" Margin="5"/>
                 <Button x:Name="SwitchButton" Width="74" Content="Switch" Click="SwitchButton_Click" Margin="5"/>
                 <Button x:Name="PauseButton" Width="74" IsEnabled="False" Content="Pause" Click="PauseButton_Click" Margin="5"/>
             </StackPanel>
         </Grid>
     </Viewbox>
+    </Grid>
 </Window>

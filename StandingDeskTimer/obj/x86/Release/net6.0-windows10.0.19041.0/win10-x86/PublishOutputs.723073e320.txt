@@ -55,7 +55,7 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-wind
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\hostfxr.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\hostpolicy.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\mscordaccore.dll
-D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\mscordaccore_x86_x86_6.0.2824.12007.dll
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\mscordaccore_x86_x86_6.0.2924.17105.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\mscordbi.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\mscorrc.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net6.0-windows10.0.19041.0\win10-x86\publish\msquic.dll

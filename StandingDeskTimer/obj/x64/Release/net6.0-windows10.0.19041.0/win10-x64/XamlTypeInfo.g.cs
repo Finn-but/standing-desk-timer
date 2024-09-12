@@ -224,55 +224,65 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[23];
+            _typeNameTable = new string[28];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "Microsoft.UI.Xaml.Controls.NumberBox";
+            _typeNameTable[4] = "Microsoft.UI.Xaml.Controls.MenuBar";
             _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[6] = "Double";
-            _typeNameTable[7] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[8] = "Windows.Globalization.NumberFormatting.INumberFormatter2";
-            _typeNameTable[9] = "String";
-            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase";
-            _typeNameTable[11] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[12] = "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode";
-            _typeNameTable[13] = "System.Enum";
-            _typeNameTable[14] = "System.ValueType";
-            _typeNameTable[15] = "Microsoft.UI.Xaml.TextReadingOrder";
-            _typeNameTable[16] = "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode";
-            _typeNameTable[17] = "StandingDeskTimer.MainWindow";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[19] = "Int32";
-            _typeNameTable[20] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[21] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[22] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[6] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuBarItem>";
+            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.MenuBarItem";
+            _typeNameTable[8] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase>";
+            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase";
+            _typeNameTable[10] = "String";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.NumberBox";
+            _typeNameTable[12] = "Double";
+            _typeNameTable[13] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[14] = "Windows.Globalization.NumberFormatting.INumberFormatter2";
+            _typeNameTable[15] = "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase";
+            _typeNameTable[16] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode";
+            _typeNameTable[18] = "System.Enum";
+            _typeNameTable[19] = "System.ValueType";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.TextReadingOrder";
+            _typeNameTable[21] = "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode";
+            _typeNameTable[22] = "StandingDeskTimer.MainWindow";
+            _typeNameTable[23] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[24] = "Int32";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[27] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[23];
+            _typeTable = new global::System.Type[28];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBox);
+            _typeTable[4] = typeof(global::Microsoft.UI.Xaml.Controls.MenuBar);
             _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[6] = typeof(global::System.Double);
-            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[8] = typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2);
-            _typeTable[9] = typeof(global::System.String);
-            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase);
-            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[12] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode);
-            _typeTable[13] = typeof(global::System.Enum);
-            _typeTable[14] = typeof(global::System.ValueType);
-            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.TextReadingOrder);
-            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode);
-            _typeTable[17] = typeof(global::StandingDeskTimer.MainWindow);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[19] = typeof(global::System.Int32);
-            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[22] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[6] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.MenuBarItem>);
+            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.MenuBarItem);
+            _typeTable[8] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase>);
+            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase);
+            _typeTable[10] = typeof(global::System.String);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBox);
+            _typeTable[12] = typeof(global::System.Double);
+            _typeTable[13] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[14] = typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2);
+            _typeTable[15] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase);
+            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode);
+            _typeTable[18] = typeof(global::System.Enum);
+            _typeTable[19] = typeof(global::System.ValueType);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.TextReadingOrder);
+            _typeTable[21] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode);
+            _typeTable[22] = typeof(global::StandingDeskTimer.MainWindow);
+            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[24] = typeof(global::System.Int32);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[27] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -308,9 +318,11 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_NumberBox() { return new global::Microsoft.UI.Xaml.Controls.NumberBox(); }
-        private object Activate_17_MainWindow() { return new global::StandingDeskTimer.MainWindow(); }
-        private object Activate_20_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_4_MenuBar() { return new global::Microsoft.UI.Xaml.Controls.MenuBar(); }
+        private object Activate_7_MenuBarItem() { return new global::Microsoft.UI.Xaml.Controls.MenuBarItem(); }
+        private object Activate_11_NumberBox() { return new global::Microsoft.UI.Xaml.Controls.NumberBox(); }
+        private object Activate_22_MainWindow() { return new global::StandingDeskTimer.MainWindow(); }
+        private object Activate_25_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -318,7 +330,19 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_22_IList(object instance, object item)
+        private void VectorAdd_6_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.MenuBarItem>)instance;
+            var newItem = (global::Microsoft.UI.Xaml.Controls.MenuBarItem)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_8_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase>)instance;
+            var newItem = (global::Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_27_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -355,9 +379,52 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  Microsoft.UI.Xaml.Controls.NumberBox
+            case 4:   //  Microsoft.UI.Xaml.Controls.MenuBar
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_4_NumberBox;
+                userType.Activator = Activate_4_MenuBar;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.MenuBar.Items");
+                userType.AddMemberName("Items");
+                xamlType = userType;
+                break;
+
+            case 5:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuBarItem>
+                userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_6_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Microsoft.UI.Xaml.Controls.MenuBarItem
+                userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_7_MenuBarItem;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.MenuBarItem.Items");
+                userType.AddMemberName("Items");
+                userType.AddMemberName("Title");
+                xamlType = userType;
+                break;
+
+            case 8:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase>
+                userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_8_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 9:   //  Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase
+                xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  String
+                xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  Microsoft.UI.Xaml.Controls.NumberBox
+                userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_11_NumberBox;
                 userType.AddMemberName("Maximum");
                 userType.AddMemberName("Minimum");
                 userType.AddMemberName("Value");
@@ -380,37 +447,29 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.UI.Xaml.Controls.Control
+            case 12:   //  Double
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Double
+            case 13:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  Microsoft.UI.Xaml.DataTemplate
-                xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  Windows.Globalization.NumberFormatting.INumberFormatter2
+            case 14:   //  Windows.Globalization.NumberFormatting.INumberFormatter2
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 9:   //  String
+            case 15:   //  Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
+            case 16:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
-                xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 12:   //  Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode
+            case 17:   //  Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Hidden);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Compact);
@@ -418,51 +477,52 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Enum
+            case 18:   //  System.Enum
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.ValueType
+            case 19:   //  System.ValueType
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 15:   //  Microsoft.UI.Xaml.TextReadingOrder
+            case 20:   //  Microsoft.UI.Xaml.TextReadingOrder
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 16:   //  Microsoft.UI.Xaml.Controls.NumberBoxValidationMode
+            case 21:   //  Microsoft.UI.Xaml.Controls.NumberBoxValidationMode
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("InvalidInputOverwritten", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.InvalidInputOverwritten);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.Disabled);
                 xamlType = userType;
                 break;
 
-            case 17:   //  StandingDeskTimer.MainWindow
+            case 22:   //  StandingDeskTimer.MainWindow
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_17_MainWindow;
+                userType.Activator = Activate_22_MainWindow;
                 userType.AddMemberName("IsTimerRunning");
                 userType.AddMemberName("IsPaused");
                 userType.AddMemberName("IsStanding");
                 userType.AddMemberName("StandingValue");
                 userType.AddMemberName("SittingValue");
                 userType.AddMemberName("IsDragging");
+                userType.AddMemberName("EnableTripleTwenty");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.Window
+            case 23:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 19:   //  Int32
+            case 24:   //  Int32
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 20:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 25:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_20_TreeViewNode;
+                userType.Activator = Activate_25_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -474,13 +534,13 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  Microsoft.UI.Xaml.DependencyObject
+            case 26:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 27:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_22_IList;
+                userType.CollectionAdd = VectorAdd_27_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -553,302 +613,332 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
             that.UseCompactResources = (global::System.Boolean)Value;
         }
-        private object get_1_NumberBox_Maximum(object instance)
+        private object get_1_MenuBar_Items(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.MenuBar)instance;
+            return that.Items;
+        }
+        private object get_2_MenuBarItem_Items(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.MenuBarItem)instance;
+            return that.Items;
+        }
+        private object get_3_MenuBarItem_Title(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.MenuBarItem)instance;
+            return that.Title;
+        }
+        private void set_3_MenuBarItem_Title(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.MenuBarItem)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_4_NumberBox_Maximum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Maximum;
         }
-        private void set_1_NumberBox_Maximum(object instance, object Value)
+        private void set_4_NumberBox_Maximum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Maximum = (global::System.Double)Value;
         }
-        private object get_2_NumberBox_Minimum(object instance)
+        private object get_5_NumberBox_Minimum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Minimum;
         }
-        private void set_2_NumberBox_Minimum(object instance, object Value)
+        private void set_5_NumberBox_Minimum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Minimum = (global::System.Double)Value;
         }
-        private object get_3_NumberBox_Value(object instance)
+        private object get_6_NumberBox_Value(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Value;
         }
-        private void set_3_NumberBox_Value(object instance, object Value)
+        private void set_6_NumberBox_Value(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Value = (global::System.Double)Value;
         }
-        private object get_4_NumberBox_AcceptsExpression(object instance)
+        private object get_7_NumberBox_AcceptsExpression(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.AcceptsExpression;
         }
-        private void set_4_NumberBox_AcceptsExpression(object instance, object Value)
+        private void set_7_NumberBox_AcceptsExpression(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.AcceptsExpression = (global::System.Boolean)Value;
         }
-        private object get_5_NumberBox_Description(object instance)
+        private object get_8_NumberBox_Description(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Description;
         }
-        private void set_5_NumberBox_Description(object instance, object Value)
+        private void set_8_NumberBox_Description(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Description = (global::System.Object)Value;
         }
-        private object get_6_NumberBox_Header(object instance)
+        private object get_9_NumberBox_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Header;
         }
-        private void set_6_NumberBox_Header(object instance, object Value)
+        private void set_9_NumberBox_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_7_NumberBox_HeaderTemplate(object instance)
+        private object get_10_NumberBox_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.HeaderTemplate;
         }
-        private void set_7_NumberBox_HeaderTemplate(object instance, object Value)
+        private void set_10_NumberBox_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_8_NumberBox_IsWrapEnabled(object instance)
+        private object get_11_NumberBox_IsWrapEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.IsWrapEnabled;
         }
-        private void set_8_NumberBox_IsWrapEnabled(object instance, object Value)
+        private void set_11_NumberBox_IsWrapEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.IsWrapEnabled = (global::System.Boolean)Value;
         }
-        private object get_9_NumberBox_LargeChange(object instance)
+        private object get_12_NumberBox_LargeChange(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.LargeChange;
         }
-        private void set_9_NumberBox_LargeChange(object instance, object Value)
+        private void set_12_NumberBox_LargeChange(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.LargeChange = (global::System.Double)Value;
         }
-        private object get_10_NumberBox_NumberFormatter(object instance)
+        private object get_13_NumberBox_NumberFormatter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.NumberFormatter;
         }
-        private void set_10_NumberBox_NumberFormatter(object instance, object Value)
+        private void set_13_NumberBox_NumberFormatter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.NumberFormatter = (global::Windows.Globalization.NumberFormatting.INumberFormatter2)Value;
         }
-        private object get_11_NumberBox_PlaceholderText(object instance)
+        private object get_14_NumberBox_PlaceholderText(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.PlaceholderText;
         }
-        private void set_11_NumberBox_PlaceholderText(object instance, object Value)
+        private void set_14_NumberBox_PlaceholderText(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.PlaceholderText = (global::System.String)Value;
         }
-        private object get_12_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance)
+        private object get_15_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.PreventKeyboardDisplayOnProgrammaticFocus;
         }
-        private void set_12_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance, object Value)
+        private void set_15_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.PreventKeyboardDisplayOnProgrammaticFocus = (global::System.Boolean)Value;
         }
-        private object get_13_NumberBox_SelectionFlyout(object instance)
+        private object get_16_NumberBox_SelectionFlyout(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.SelectionFlyout;
         }
-        private void set_13_NumberBox_SelectionFlyout(object instance, object Value)
+        private void set_16_NumberBox_SelectionFlyout(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.SelectionFlyout = (global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase)Value;
         }
-        private object get_14_NumberBox_SelectionHighlightColor(object instance)
+        private object get_17_NumberBox_SelectionHighlightColor(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.SelectionHighlightColor;
         }
-        private void set_14_NumberBox_SelectionHighlightColor(object instance, object Value)
+        private void set_17_NumberBox_SelectionHighlightColor(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.SelectionHighlightColor = (global::Microsoft.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_15_NumberBox_SmallChange(object instance)
+        private object get_18_NumberBox_SmallChange(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.SmallChange;
         }
-        private void set_15_NumberBox_SmallChange(object instance, object Value)
+        private void set_18_NumberBox_SmallChange(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.SmallChange = (global::System.Double)Value;
         }
-        private object get_16_NumberBox_SpinButtonPlacementMode(object instance)
+        private object get_19_NumberBox_SpinButtonPlacementMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.SpinButtonPlacementMode;
         }
-        private void set_16_NumberBox_SpinButtonPlacementMode(object instance, object Value)
+        private void set_19_NumberBox_SpinButtonPlacementMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.SpinButtonPlacementMode = (global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode)Value;
         }
-        private object get_17_NumberBox_Text(object instance)
+        private object get_20_NumberBox_Text(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.Text;
         }
-        private void set_17_NumberBox_Text(object instance, object Value)
+        private void set_20_NumberBox_Text(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.Text = (global::System.String)Value;
         }
-        private object get_18_NumberBox_TextReadingOrder(object instance)
+        private object get_21_NumberBox_TextReadingOrder(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.TextReadingOrder;
         }
-        private void set_18_NumberBox_TextReadingOrder(object instance, object Value)
+        private void set_21_NumberBox_TextReadingOrder(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.TextReadingOrder = (global::Microsoft.UI.Xaml.TextReadingOrder)Value;
         }
-        private object get_19_NumberBox_ValidationMode(object instance)
+        private object get_22_NumberBox_ValidationMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             return that.ValidationMode;
         }
-        private void set_19_NumberBox_ValidationMode(object instance, object Value)
+        private void set_22_NumberBox_ValidationMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NumberBox)instance;
             that.ValidationMode = (global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode)Value;
         }
-        private object get_20_MainWindow_IsTimerRunning(object instance)
+        private object get_23_MainWindow_IsTimerRunning(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.IsTimerRunning;
         }
-        private void set_20_MainWindow_IsTimerRunning(object instance, object Value)
+        private void set_23_MainWindow_IsTimerRunning(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.IsTimerRunning = (global::System.Boolean)Value;
         }
-        private object get_21_MainWindow_IsPaused(object instance)
+        private object get_24_MainWindow_IsPaused(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.IsPaused;
         }
-        private void set_21_MainWindow_IsPaused(object instance, object Value)
+        private void set_24_MainWindow_IsPaused(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.IsPaused = (global::System.Boolean)Value;
         }
-        private object get_22_MainWindow_IsStanding(object instance)
+        private object get_25_MainWindow_IsStanding(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.IsStanding;
         }
-        private void set_22_MainWindow_IsStanding(object instance, object Value)
+        private void set_25_MainWindow_IsStanding(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.IsStanding = (global::System.Boolean)Value;
         }
-        private object get_23_MainWindow_StandingValue(object instance)
+        private object get_26_MainWindow_StandingValue(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.StandingValue;
         }
-        private void set_23_MainWindow_StandingValue(object instance, object Value)
+        private void set_26_MainWindow_StandingValue(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.StandingValue = (global::System.Int32)Value;
         }
-        private object get_24_MainWindow_SittingValue(object instance)
+        private object get_27_MainWindow_SittingValue(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.SittingValue;
         }
-        private void set_24_MainWindow_SittingValue(object instance, object Value)
+        private void set_27_MainWindow_SittingValue(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.SittingValue = (global::System.Int32)Value;
         }
-        private object get_25_MainWindow_IsDragging(object instance)
+        private object get_28_MainWindow_IsDragging(object instance)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             return that.IsDragging;
         }
-        private void set_25_MainWindow_IsDragging(object instance, object Value)
+        private void set_28_MainWindow_IsDragging(object instance, object Value)
         {
             var that = (global::StandingDeskTimer.MainWindow)instance;
             that.IsDragging = (global::System.Boolean)Value;
         }
-        private object get_26_TreeViewNode_Children(object instance)
+        private object get_29_MainWindow_EnableTripleTwenty(object instance)
+        {
+            var that = (global::StandingDeskTimer.MainWindow)instance;
+            return that.EnableTripleTwenty;
+        }
+        private void set_29_MainWindow_EnableTripleTwenty(object instance, object Value)
+        {
+            var that = (global::StandingDeskTimer.MainWindow)instance;
+            that.EnableTripleTwenty = (global::System.Boolean)Value;
+        }
+        private object get_30_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_27_TreeViewNode_Content(object instance)
+        private object get_31_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_27_TreeViewNode_Content(object instance, object Value)
+        private void set_31_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_28_TreeViewNode_Depth(object instance)
+        private object get_32_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_29_TreeViewNode_HasChildren(object instance)
+        private object get_33_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_30_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_34_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_30_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_34_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_31_TreeViewNode_IsExpanded(object instance)
+        private object get_35_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_31_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_35_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_32_TreeViewNode_Parent(object instance)
+        private object get_36_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -868,219 +958,246 @@ namespace StandingDeskTimer.StandingDeskTimer_XamlTypeInfo
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
                 break;
+            case "Microsoft.UI.Xaml.Controls.MenuBar.Items":
+                userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.MenuBar");
+                xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuBarItem>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_MenuBar_Items;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.MenuBarItem.Items":
+                userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.MenuBarItem");
+                xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.MenuFlyoutItemBase>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_MenuBarItem_Items;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.MenuBarItem.Title":
+                userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.MenuBarItem");
+                xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_MenuBarItem_Title;
+                xamlMember.Setter = set_3_MenuBarItem_Title;
+                break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Maximum":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_NumberBox_Maximum;
-                xamlMember.Setter = set_1_NumberBox_Maximum;
+                xamlMember.Getter = get_4_NumberBox_Maximum;
+                xamlMember.Setter = set_4_NumberBox_Maximum;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Minimum":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_NumberBox_Minimum;
-                xamlMember.Setter = set_2_NumberBox_Minimum;
+                xamlMember.Getter = get_5_NumberBox_Minimum;
+                xamlMember.Setter = set_5_NumberBox_Minimum;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Value":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Value", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_NumberBox_Value;
-                xamlMember.Setter = set_3_NumberBox_Value;
+                xamlMember.Getter = get_6_NumberBox_Value;
+                xamlMember.Setter = set_6_NumberBox_Value;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.AcceptsExpression":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "AcceptsExpression", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_NumberBox_AcceptsExpression;
-                xamlMember.Setter = set_4_NumberBox_AcceptsExpression;
+                xamlMember.Getter = get_7_NumberBox_AcceptsExpression;
+                xamlMember.Setter = set_7_NumberBox_AcceptsExpression;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Description":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Description", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_NumberBox_Description;
-                xamlMember.Setter = set_5_NumberBox_Description;
+                xamlMember.Getter = get_8_NumberBox_Description;
+                xamlMember.Setter = set_8_NumberBox_Description;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Header":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_NumberBox_Header;
-                xamlMember.Setter = set_6_NumberBox_Header;
+                xamlMember.Getter = get_9_NumberBox_Header;
+                xamlMember.Setter = set_9_NumberBox_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.HeaderTemplate":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_NumberBox_HeaderTemplate;
-                xamlMember.Setter = set_7_NumberBox_HeaderTemplate;
+                xamlMember.Getter = get_10_NumberBox_HeaderTemplate;
+                xamlMember.Setter = set_10_NumberBox_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.IsWrapEnabled":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsWrapEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_NumberBox_IsWrapEnabled;
-                xamlMember.Setter = set_8_NumberBox_IsWrapEnabled;
+                xamlMember.Getter = get_11_NumberBox_IsWrapEnabled;
+                xamlMember.Setter = set_11_NumberBox_IsWrapEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.LargeChange":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "LargeChange", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_NumberBox_LargeChange;
-                xamlMember.Setter = set_9_NumberBox_LargeChange;
+                xamlMember.Getter = get_12_NumberBox_LargeChange;
+                xamlMember.Setter = set_12_NumberBox_LargeChange;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.NumberFormatter":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "NumberFormatter", "Windows.Globalization.NumberFormatting.INumberFormatter2");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_NumberBox_NumberFormatter;
-                xamlMember.Setter = set_10_NumberBox_NumberFormatter;
+                xamlMember.Getter = get_13_NumberBox_NumberFormatter;
+                xamlMember.Setter = set_13_NumberBox_NumberFormatter;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.PlaceholderText":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "PlaceholderText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_NumberBox_PlaceholderText;
-                xamlMember.Setter = set_11_NumberBox_PlaceholderText;
+                xamlMember.Getter = get_14_NumberBox_PlaceholderText;
+                xamlMember.Setter = set_14_NumberBox_PlaceholderText;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.PreventKeyboardDisplayOnProgrammaticFocus":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "PreventKeyboardDisplayOnProgrammaticFocus", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
-                xamlMember.Setter = set_12_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
+                xamlMember.Getter = get_15_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
+                xamlMember.Setter = set_15_NumberBox_PreventKeyboardDisplayOnProgrammaticFocus;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.SelectionFlyout":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "SelectionFlyout", "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_NumberBox_SelectionFlyout;
-                xamlMember.Setter = set_13_NumberBox_SelectionFlyout;
+                xamlMember.Getter = get_16_NumberBox_SelectionFlyout;
+                xamlMember.Setter = set_16_NumberBox_SelectionFlyout;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.SelectionHighlightColor":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "SelectionHighlightColor", "Microsoft.UI.Xaml.Media.SolidColorBrush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_NumberBox_SelectionHighlightColor;
-                xamlMember.Setter = set_14_NumberBox_SelectionHighlightColor;
+                xamlMember.Getter = get_17_NumberBox_SelectionHighlightColor;
+                xamlMember.Setter = set_17_NumberBox_SelectionHighlightColor;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.SmallChange":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "SmallChange", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_NumberBox_SmallChange;
-                xamlMember.Setter = set_15_NumberBox_SmallChange;
+                xamlMember.Getter = get_18_NumberBox_SmallChange;
+                xamlMember.Setter = set_18_NumberBox_SmallChange;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.SpinButtonPlacementMode":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "SpinButtonPlacementMode", "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_NumberBox_SpinButtonPlacementMode;
-                xamlMember.Setter = set_16_NumberBox_SpinButtonPlacementMode;
+                xamlMember.Getter = get_19_NumberBox_SpinButtonPlacementMode;
+                xamlMember.Setter = set_19_NumberBox_SpinButtonPlacementMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.Text":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Text", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_NumberBox_Text;
-                xamlMember.Setter = set_17_NumberBox_Text;
+                xamlMember.Getter = get_20_NumberBox_Text;
+                xamlMember.Setter = set_20_NumberBox_Text;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.TextReadingOrder":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "TextReadingOrder", "Microsoft.UI.Xaml.TextReadingOrder");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_NumberBox_TextReadingOrder;
-                xamlMember.Setter = set_18_NumberBox_TextReadingOrder;
+                xamlMember.Getter = get_21_NumberBox_TextReadingOrder;
+                xamlMember.Setter = set_21_NumberBox_TextReadingOrder;
                 break;
             case "Microsoft.UI.Xaml.Controls.NumberBox.ValidationMode":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NumberBox");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "ValidationMode", "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_NumberBox_ValidationMode;
-                xamlMember.Setter = set_19_NumberBox_ValidationMode;
+                xamlMember.Getter = get_22_NumberBox_ValidationMode;
+                xamlMember.Setter = set_22_NumberBox_ValidationMode;
                 break;
             case "StandingDeskTimer.MainWindow.IsTimerRunning":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsTimerRunning", "Boolean");
-                xamlMember.Getter = get_20_MainWindow_IsTimerRunning;
-                xamlMember.Setter = set_20_MainWindow_IsTimerRunning;
+                xamlMember.Getter = get_23_MainWindow_IsTimerRunning;
+                xamlMember.Setter = set_23_MainWindow_IsTimerRunning;
                 break;
             case "StandingDeskTimer.MainWindow.IsPaused":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsPaused", "Boolean");
-                xamlMember.Getter = get_21_MainWindow_IsPaused;
-                xamlMember.Setter = set_21_MainWindow_IsPaused;
+                xamlMember.Getter = get_24_MainWindow_IsPaused;
+                xamlMember.Setter = set_24_MainWindow_IsPaused;
                 break;
             case "StandingDeskTimer.MainWindow.IsStanding":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsStanding", "Boolean");
-                xamlMember.Getter = get_22_MainWindow_IsStanding;
-                xamlMember.Setter = set_22_MainWindow_IsStanding;
+                xamlMember.Getter = get_25_MainWindow_IsStanding;
+                xamlMember.Setter = set_25_MainWindow_IsStanding;
                 break;
             case "StandingDeskTimer.MainWindow.StandingValue":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "StandingValue", "Int32");
-                xamlMember.Getter = get_23_MainWindow_StandingValue;
-                xamlMember.Setter = set_23_MainWindow_StandingValue;
+                xamlMember.Getter = get_26_MainWindow_StandingValue;
+                xamlMember.Setter = set_26_MainWindow_StandingValue;
                 break;
             case "StandingDeskTimer.MainWindow.SittingValue":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "SittingValue", "Int32");
-                xamlMember.Getter = get_24_MainWindow_SittingValue;
-                xamlMember.Setter = set_24_MainWindow_SittingValue;
+                xamlMember.Getter = get_27_MainWindow_SittingValue;
+                xamlMember.Setter = set_27_MainWindow_SittingValue;
                 break;
             case "StandingDeskTimer.MainWindow.IsDragging":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsDragging", "Boolean");
-                xamlMember.Getter = get_25_MainWindow_IsDragging;
-                xamlMember.Setter = set_25_MainWindow_IsDragging;
+                xamlMember.Getter = get_28_MainWindow_IsDragging;
+                xamlMember.Setter = set_28_MainWindow_IsDragging;
+                break;
+            case "StandingDeskTimer.MainWindow.EnableTripleTwenty":
+                userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("StandingDeskTimer.MainWindow");
+                xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "EnableTripleTwenty", "Boolean");
+                xamlMember.Getter = get_29_MainWindow_EnableTripleTwenty;
+                xamlMember.Setter = set_29_MainWindow_EnableTripleTwenty;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_26_TreeViewNode_Children;
+                xamlMember.Getter = get_30_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_TreeViewNode_Content;
-                xamlMember.Setter = set_27_TreeViewNode_Content;
+                xamlMember.Getter = get_31_TreeViewNode_Content;
+                xamlMember.Setter = set_31_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_TreeViewNode_Depth;
+                xamlMember.Getter = get_32_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_33_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_30_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_30_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_34_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_34_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_31_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_35_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_35_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::StandingDeskTimer.StandingDeskTimer_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_32_TreeViewNode_Parent;
+                xamlMember.Getter = get_36_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

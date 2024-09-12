@@ -526,7 +526,6 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-wi
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\hostfxr.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\hostpolicy.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore.dll
-D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore_x86_x86_6.0.2824.12007.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordbi.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscorrc.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\msquic.dll
@@ -571,3 +570,4 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Debug\net6.0-wi
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\qualifiers.txt.intermediate
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\MultipleQualifiersPerDimensionFound.txt
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\ProjectArchitectures.txt
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net6.0-windows10.0.19041.0\win10-x86\mscordaccore_x86_x86_6.0.2924.17105.dll
