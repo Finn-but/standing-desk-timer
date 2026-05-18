@@ -13,6 +13,10 @@
     <AppIconSource>C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\Assets\stand.png</AppIconSource>
     <SplashScreenSource>C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\Assets\stand.png</SplashScreenSource>
     <PackageLogoSource>C:\Users\FinnVB\source\repos\StandingDeskTimer\StandingDeskTimer\Assets\stand.png</PackageLogoSource>
+    <ActiveDebugProfile>StandingDeskTimer (Package)</ActiveDebugProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
     <None Update="App.xaml">

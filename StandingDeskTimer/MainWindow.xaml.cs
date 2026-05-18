@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -40,6 +41,8 @@ namespace StandingDeskTimer
         private TimeSpan remainingTime;
         private TimeSpan remainingTripleTwentyTime;
         private TimeSpan remainingTripleTwentyAwayTime;
+        private ITaskbarList3 _taskbar;
+        private IntPtr _hwnd;
 
         private Brush ActiveColor = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 49, 181, 91));
         private Brush InactiveColor;
@@ -257,6 +260,10 @@ namespace StandingDeskTimer
             InactiveColor = SittingTime.Foreground;
             PlayColor = ProgressBar1.Foreground;
 
+            _hwnd = WinRT.Interop.WindowNative.GetWindowHandle(this);
+            _taskbar = (ITaskbarList3)new TaskbarInstance();
+            _taskbar.HrInit();
+
             clearBadge();
 
         }
@@ -291,6 +298,7 @@ namespace StandingDeskTimer
 
             if (remainingTime.Seconds == 0 && remainingTime.Minutes > 0)
             {
+                    Debug.WriteLine($"[Badge] Tick condition hit: {remainingTime}, calling setBadgeNumber({(int)remainingTime.TotalMinutes})");
                     setBadgeNumber((int)remainingTime.TotalMinutes);
             }
 
@@ -355,53 +363,78 @@ namespace StandingDeskTimer
 
         private void setBadgeNumber(int num)
         {
-            // Get the blank badge XML payload for a badge number
-            XmlDocument badgeXml = BadgeUpdateManager.GetTemplateContent(BadgeTemplateType.BadgeNumber);
+            try
+            {
+                using var icon = CreateBadgeNumberIcon(num);
+                IntPtr hIcon = icon.GetHicon();
+                _taskbar.SetOverlayIcon(_hwnd, hIcon, num.ToString());
+                DestroyIcon(hIcon);
+                Debug.WriteLine($"[Badge] setBadgeNumber({num}) succeeded");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"[Badge] setBadgeNumber({num}) failed: {ex}");
+            }
+        }
 
-            // Set the value of the badge in the XML to our number
-            XmlElement badgeElement = badgeXml.SelectSingleNode("/badge") as XmlElement;
-            badgeElement.SetAttribute("value", num.ToString());
-
-
-            // Create the badge notification
-            BadgeNotification badge = new BadgeNotification(badgeXml);
-
-            // Create the badge updater for the application
-            BadgeUpdater badgeUpdater =
-                BadgeUpdateManager.CreateBadgeUpdaterForApplication();
-
-            // And update the badge
-            badgeUpdater.Update(badge);
-
+        private System.Drawing.Bitmap CreateBadgeNumberIcon(int num)
+        {
+            int dpi = GetDpiForWindow(_hwnd);
+            int size = Math.Max(16, dpi * 16 / 96); // scale with display DPI
+            var bmp = new System.Drawing.Bitmap(size, size, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            using var g = System.Drawing.Graphics.FromImage(bmp);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            g.Clear(System.Drawing.Color.Transparent);
+            using var bgBrush = new System.Drawing.SolidBrush(System.Drawing.Color.FromArgb(255, 225, 38, 46));
+            g.FillEllipse(bgBrush, 0, 0, size - 1, size - 1);
+            string text = num > 99 ? "99+" : num.ToString();
+            float fontSize = size * (num > 9 ? 0.55f : 0.82f);
+            using var font = new System.Drawing.Font("Segoe UI", fontSize, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            var sf = new System.Drawing.StringFormat
+            {
+                Alignment = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center,
+                FormatFlags = System.Drawing.StringFormatFlags.NoWrap | System.Drawing.StringFormatFlags.NoClip
+            };
+            g.DrawString(text, font, System.Drawing.Brushes.White, new System.Drawing.RectangleF(0, 0, size, size), sf);
+            return bmp;
         }
 
         private void setPauseBadge()
         {
-            string badgeGlyphValue = "paused";
-
-            // Get the blank badge XML payload for a badge glyph
-            XmlDocument badgeXml =
-                BadgeUpdateManager.GetTemplateContent(BadgeTemplateType.BadgeGlyph);
-
-            // Set the value of the badge in the XML to our glyph value
-            XmlElement badgeElement =
-                badgeXml.SelectSingleNode("/badge") as XmlElement;
-            badgeElement.SetAttribute("value", badgeGlyphValue);
-
-            // Create the badge notification
-            BadgeNotification badge = new BadgeNotification(badgeXml);
-
-            // Create the badge updater for the application
-            BadgeUpdater badgeUpdater =
-                BadgeUpdateManager.CreateBadgeUpdaterForApplication();
-
-            // And update the badge
-            badgeUpdater.Update(badge);
+            try
+            {
+                int dpi = GetDpiForWindow(_hwnd);
+                int sz = Math.Max(16, dpi * 16 / 96);
+                using var bmp = new System.Drawing.Bitmap(sz, sz, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+                using var g = System.Drawing.Graphics.FromImage(bmp);
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                g.Clear(System.Drawing.Color.Transparent);
+                using var bgBrush = new System.Drawing.SolidBrush(System.Drawing.Color.FromArgb(255, 249, 199, 79));
+                g.FillEllipse(bgBrush, 0, 0, sz - 1, sz - 1);
+                using var barBrush = new System.Drawing.SolidBrush(System.Drawing.Color.FromArgb(255, 80, 60, 0));
+                int bx = sz / 4; int bw = sz / 5; int by = (int)(sz * 0.27f); int bh = (int)(sz * 0.46f);
+                g.FillRectangle(barBrush, bx, by, bw, bh);
+                g.FillRectangle(barBrush, sz - bx - bw, by, bw, bh);
+                IntPtr hIcon = bmp.GetHicon();
+                _taskbar.SetOverlayIcon(_hwnd, hIcon, "Paused");
+                DestroyIcon(hIcon);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"[Badge] setPauseBadge failed: {ex}");
+            }
         }
 
         private void clearBadge()
         {
-            BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
+            try
+            {
+                _taskbar?.SetOverlayIcon(_hwnd, IntPtr.Zero, null);
+                BadgeUpdateManager.CreateBadgeUpdaterForApplication().Clear();
+            }
+            catch (Exception ex) { Debug.WriteLine($"[Badge] clearBadge failed: {ex}"); }
         }
 
         private bool isProgrammaticChange = false;
@@ -478,6 +511,33 @@ namespace StandingDeskTimer
             {
                 await AppNotificationManager.Default.RemoveByTagAndGroupAsync("TripleTwenty", "TripleTwenty");
             }
+        }
+
+        [DllImport("user32.dll")] private static extern bool DestroyIcon(IntPtr hIcon);
+        [DllImport("user32.dll")] private static extern int GetDpiForWindow(IntPtr hwnd);
+
+        [ComImport, Guid("56FDF344-FD6D-11d0-958A-006097C9A090"), ClassInterface(ClassInterfaceType.None)]
+        private class TaskbarInstance { }
+
+        [ComImport, Guid("ea1afb91-9e28-4b86-90e9-9e9f8a5eefaf"), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        private interface ITaskbarList3
+        {
+            [PreserveSig] void HrInit();
+            [PreserveSig] void AddTab(IntPtr hwnd);
+            [PreserveSig] void DeleteTab(IntPtr hwnd);
+            [PreserveSig] void ActivateTab(IntPtr hwnd);
+            [PreserveSig] void SetActiveAlt(IntPtr hwnd);
+            [PreserveSig] void MarkFullscreenWindow(IntPtr hwnd, [MarshalAs(UnmanagedType.Bool)] bool fFullscreen);
+            [PreserveSig] void SetProgressValue(IntPtr hwnd, ulong ullCompleted, ulong ullTotal);
+            [PreserveSig] void SetProgressState(IntPtr hwnd, int tbpFlags);
+            [PreserveSig] void RegisterTab(IntPtr hwndTab, IntPtr hwndMDI);
+            [PreserveSig] void UnregisterTab(IntPtr hwndTab);
+            [PreserveSig] void SetTabOrder(IntPtr hwndTab, IntPtr hwndInsertBefore);
+            [PreserveSig] void SetTabActive(IntPtr hwndTab, IntPtr hwndMDI, uint dwReserved);
+            [PreserveSig] void ThumbBarAddButtons(IntPtr hwnd, uint cButtons, IntPtr pButton);
+            [PreserveSig] void ThumbBarUpdateButtons(IntPtr hwnd, uint cButtons, IntPtr pButton);
+            [PreserveSig] void ThumbBarSetImageList(IntPtr hwnd, IntPtr himl);
+            [PreserveSig] void SetOverlayIcon(IntPtr hwnd, IntPtr hIcon, [MarshalAs(UnmanagedType.LPWStr)] string pszDescription);
         }
     }
 }

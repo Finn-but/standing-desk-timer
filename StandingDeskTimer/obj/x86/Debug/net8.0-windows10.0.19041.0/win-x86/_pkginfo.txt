@@ -1,0 +1,1 @@
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Debug\net8.0-windows10.0.19041.0\win-x86\AppPackages\StandingDeskTimer_1.0.10.0_x86_Debug_Test\StandingDeskTimer_1.0.10.0_x86_Debug.msix
