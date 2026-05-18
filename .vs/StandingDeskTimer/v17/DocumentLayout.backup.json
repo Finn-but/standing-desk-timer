@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitProjects\\BUT\\standing-desk-timer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|d:\\gitprojects\\but\\standing-desk-timer\\standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\obj\\x86\\Debug\\net8.0-windows10.0.19041.0\\win-x86\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StandingDeskTimer\\obj\\x86\\Debug\\net8.0-windows10.0.19041.0\\win-x86\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -12,10 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|d:\\gitprojects\\but\\standing-desk-timer\\standingdesktimer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|d:\\gitprojects\\but\\standing-desk-timer\\standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{17514805-0F08-41BA-BA01-230E4429D2EA}|StandingDeskTimer\\StandingDeskTimer.csproj|solutionrelative:standingdesktimer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\obj\\x86\\Debug\\net6.0-windows10.0.19041.0\\win10-x86\\App.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,7 +41,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ActivationFactory.cs",
               "DocumentMoniker": "C:\\Users\\FinnVB\\AppData\\Local\\Temp\\.vsdbgsrc\\b96c9450a6e367c05e1d2684f87e44c6ba7033d405e70deea6b2ff7b3894200e\\ActivationFactory.cs",
               "ToolTip": "C:\\Users\\FinnVB\\AppData\\Local\\Temp\\.vsdbgsrc\\b96c9450a6e367c05e1d2684f87e44c6ba7033d405e70deea6b2ff7b3894200e\\ActivationFactory.cs [Read Only]",
@@ -52,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "App.g.i.cs",
               "DocumentMoniker": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\obj\\x86\\Debug\\net8.0-windows10.0.19041.0\\win-x86\\App.g.i.cs",
               "RelativeDocumentMoniker": "StandingDeskTimer\\obj\\x86\\Debug\\net8.0-windows10.0.19041.0\\win-x86\\App.g.i.cs",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "StandingDeskTimer\\MainWindow.xaml.cs",
@@ -101,15 +101,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\MainWindow.xaml",
               "RelativeDocumentMoniker": "StandingDeskTimer\\MainWindow.xaml",
               "ToolTip": "D:\\GitProjects\\BUT\\standing-desk-timer\\StandingDeskTimer\\MainWindow.xaml",
               "RelativeToolTip": "StandingDeskTimer\\MainWindow.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-09T07:42:22.42Z"
+              "WhenOpened": "2024-04-09T07:42:22.42Z",
+              "EditorCaption": ""
             }
           ]
         }

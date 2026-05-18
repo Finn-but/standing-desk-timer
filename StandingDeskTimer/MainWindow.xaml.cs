@@ -389,7 +389,7 @@ namespace StandingDeskTimer
             using var bgBrush = new System.Drawing.SolidBrush(System.Drawing.Color.FromArgb(255, 225, 38, 46));
             g.FillEllipse(bgBrush, 0, 0, size - 1, size - 1);
             string text = num > 99 ? "99+" : num.ToString();
-            float fontSize = size * (num > 9 ? 0.55f : 0.82f);
+            float fontSize = size * (num > 9 ? 0.55f : 0.68f);
             using var font = new System.Drawing.Font("Segoe UI", fontSize, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             var sf = new System.Drawing.StringFormat
             {

@@ -250,3 +250,5 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Release\net8.0-
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Release\net8.0-windows10.0.19041.0\win-x86\qualifiers.txt.intermediate
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Release\net8.0-windows10.0.19041.0\win-x86\MultipleQualifiersPerDimensionFound.txt
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\obj\x86\Release\net8.0-windows10.0.19041.0\win-x86\ProjectArchitectures.txt
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Release\net8.0-windows10.0.19041.0\win-x86\Microsoft.Win32.SystemEvents.dll
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\x86\Release\net8.0-windows10.0.19041.0\win-x86\System.Drawing.Common.dll

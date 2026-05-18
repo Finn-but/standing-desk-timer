@@ -188,6 +188,7 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-wind
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\msquic.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Windows.SDK.NET.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\WinRT.Runtime.dll
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Win32.SystemEvents.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.InteractiveExperiences.Projection.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.WinUI.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Windows.AppLifecycle.Projection.dll
@@ -204,6 +205,7 @@ D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-wind
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Windows.System.Projection.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Windows.Widgets.Projection.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\System.Drawing.Common.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\WebView2Loader.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.WindowsAppRuntime.Bootstrap.dll
 D:\GitProjects\BUT\standing-desk-timer\StandingDeskTimer\bin\Release\net8.0-windows10.0.19041.0\win-x86\publish\Microsoft.Web.WebView2.Core.dll
